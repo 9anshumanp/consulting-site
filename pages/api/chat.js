@@ -22,7 +22,7 @@ export default async function handler(req, res) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "gpt-4o-mini", // replace with model you have access to
+        model: "gpt-3.5-turbo", // replace with model you have access to
         messages: [{ role: "user", content: message }],
         max_tokens: 300
       })
