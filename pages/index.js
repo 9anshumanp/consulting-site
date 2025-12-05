@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Home() {
   const [msg, setMsg] = useState("");
   const [chat, setChat] = useState([
-    { who: "bot", text: "Welcome — ask me about our demo chat or services!" }
+    { who: "bot", text: "Welcome — ask me about our demo chat or services!!!" }
   ]);
   const [loading, setLoading] = useState(false);
 
