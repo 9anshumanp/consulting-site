@@ -1,24 +1,73 @@
-import Hero from './components/Hero'
-import Link from 'next/link'
+import Hero from "./components/Hero";
+import Link from "next/link";
+
+function Service({ title, icon, desc }) {
+  return (
+    <div className="p-6 bg-gray-50 border rounded-xl shadow-sm hover:shadow-md transition">
+      <img
+        src={`/images/services/${icon}.png`}
+        alt={title}
+        className="h-12 w-12 mx-auto"
+      />
+      <h3 className="mt-4 text-lg font-semibold text-center text-gray-900">
+        {title}
+      </h3>
+      <p className="text-gray-600 text-center mt-2 text-sm">{desc}</p>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
-    <main className="page">
+    <>
       <Hero />
-      <section className="container services">
-        <h2 className="section-title">Core Services</h2>
-        <div className="grid">
-          <div className="card"><img src="/images/services/ai_architecture.png" alt="AI"/><h3>AI Architecture</h3><p>Design scalable LLM & embedding systems, retrieval pipelines, and MLOps.</p></div>
-          <div className="card"><img src="/images/services/chatbot.png" alt="Chatbot"/><h3>Chatbots & RAG</h3><p>Custom chat assistants and knowledge retrieval solutions.</p></div>
-          <div className="card"><img src="/images/services/pdf.png" alt="PDF"/><h3>Document Intelligence</h3><p>PDF → structured data, OCR, table extraction.</p></div>
-          <div className="card"><img src="/images/services/automation.png" alt="Automation"/><h3>Automation</h3><p>Workflow automation and process improvements.</p></div>
-          <div className="card"><img src="/images/services/data_engineering.png" alt="Data"/><h3>Data Engineering</h3><p>ETL, pipelines, dashboards and cloud migration.</p></div>
-          <div className="card"><img src="/images/services/governance.png" alt="Governance"/><h3>AI Governance</h3><p>Responsible AI, model risk, monitoring and compliance.</p></div>
+
+      <section className="max-w-6xl mx-auto px-6 pb-16">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          Core Services
+        </h2>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <Service
+            title="AI Architecture"
+            icon="ai_architecture"
+            desc="LLM pipelines, retrieval, vector DBs, model orchestration."
+          />
+          <Service
+            title="Chatbots & RAG"
+            icon="chatbot"
+            desc="Internal helpdesk bots and knowledge retrieval systems."
+          />
+          <Service
+            title="Document Intelligence"
+            icon="pdf"
+            desc="PDF → structured data, OCR, table and form extraction."
+          />
+          <Service
+            title="Process Automation"
+            icon="automation"
+            desc="End-to-end workflow automation and task orchestration."
+          />
+          <Service
+            title="Data Engineering"
+            icon="data_engineering"
+            desc="Pipelines, dashboards, and analytics-ready data stacks."
+          />
+          <Service
+            title="AI Governance"
+            icon="governance"
+            desc="Model monitoring, risk controls, and responsible AI."
+          />
         </div>
-        <div style={{textAlign:'center', marginTop:24}}>
-          <Link href="/contact"><a className="btn">Schedule a 2-hour audit</a></Link>
+
+        <div className="text-center mt-10">
+          <Link
+            href="/services"
+            className="px-5 py-3 bg-brand text-white rounded-lg hover:bg-brand-dark text-sm font-semibold"
+          >
+            Explore all services
+          </Link>
         </div>
       </section>
-    </main>
-  )
+    </>
+  );
 }

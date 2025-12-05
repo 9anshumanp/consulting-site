@@ -1,28 +1,8 @@
-:root{
-  --bg: #0b0f1a;
-  --card: #0f1724;
-  --accent: #00e6ff;
-  --accent-2: #9b59ff;
-  --muted: #9aa4b2;
-  --glass: rgba(255,255,255,0.04);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-gray-800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-html,body{height:100%}
-body{ margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:var(--muted); }
-.nav{ padding:18px 28px; background:linear-gradient(90deg, rgba(11,15,26,0.9), rgba(15,23,36,0.9)); box-shadow:0 2px 12px rgba(0,0,0,0.6); position:sticky; top:0; z-index:40;}
-.nav-inner{ display:flex; justify-content:space-between; align-items:center; max-width:1100px; margin:0 auto; }
-.brand{ display:flex; align-items:center; gap:10px; }
-.logo{ height:36px; }
-.brand-text{ color:var(--accent); font-weight:700; letter-spacing:0.6px; }
-.links a{ color:var(--muted); margin-left:18px; text-decoration:none; }
-.links .cta{ color:var(--accent); font-weight:700; }
-.hero{ padding:48px 0; }
-.hero-inner{ display:flex; gap:24px; align-items:center; max-width:1100px; margin:0 auto; }
-.hero img{ width:420px; border-radius:12px; box-shadow:0 20px 40px rgba(0,0,0,0.6); }
-.hero-title{ color:var(--accent); font-size:36px; margin:0 0 8px 0; }
-.hero-sub{ color:var(--muted); margin:0 0 16px 0; }
-.container{ max-width:1100px; margin:32px auto; padding:0 18px; }
-.grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; }
-.card{ background:var(--card); padding:18px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.6); color:white; }
-.btn{ display:inline-block; padding:10px 14px; border-radius:10px; background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#021; font-weight:700; text-decoration:none; }
-.footer{ padding:28px; text-align:center; color:var(--muted); border-top:1px solid rgba(255,255,255,0.02); margin-top:48px; }
-input, textarea{ width:100%; padding:10px; border-radius:8px; background:var(--glass); border:1px solid rgba(255,255,255,0.03); color:white; margin-bottom:8px; }

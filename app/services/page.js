@@ -1,15 +1,13 @@
-export default function Services(){
+export const metadata = { title: "Services - PrimeLogic" };
+
+export default function ServicesPage() {
   return (
-    <main className='container page'>
-      <h1>Services</h1>
-      <ul>
-        <li>AI Architecture & Strategy</li>
-        <li>Chatbot Development & RAG</li>
-        <li>PDF → Structured Data Conversion</li>
-        <li>Process Automation</li>
-        <li>Data Engineering & Pipelines</li>
-        <li>AI Governance & Model Risk</li>
-      </ul>
-    </main>
-  )
+    <div className="max-w-6xl mx-auto px-6 py-12">
+      <h1 className="text-3xl font-bold text-gray-900 mb-4">Services</h1>
+      <p className="text-gray-600">
+        We offer AI architecture, chatbot development, document intelligence,
+        workflow automation, data engineering, and AI governance services.
+      </p>
+    </div>
+  );
 }
