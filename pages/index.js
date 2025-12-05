@@ -14,7 +14,7 @@ export default function Home(){
           <div className="grid">
             <div className="card"><img src="/images/services/ai_architecture.png" alt=""/><h3>AI Architecture</h3><p>Design scalable LLM & embedding systems, retrieval pipelines, and MLOps.</p></div>
             <div className="card"><img src="/images/services/chatbot.png" alt=""/><h3>Chatbots & RAG</h3><p>Custom chat assistants and knowledge retrieval solutions.</p></div>
-            <div className="card"><img src="/images/services/pdf.png" alt=""/><h3>Document Intelligence</h3><p>PDF -> structured data, OCR, table extraction.</p></div>
+            <div className="card"><img src="/images/services/pdf.png" alt=""/><h3>Document Intelligence</h3><p>PDF → structured data, OCR, table extraction.</p></div>
             <div className="card"><img src="/images/services/automation.png" alt=""/><h3>Automation</h3><p>Workflow automation and process improvements.</p></div>
             <div className="card"><img src="/images/services/data_engineering.png" alt=""/><h3>Data Engineering</h3><p>ETL, pipelines, dashboards and cloud migration.</p></div>
             <div className="card"><img src="/images/services/governance.png" alt=""/><h3>AI Governance</h3><p>Responsible AI, model risk, monitoring and compliance.</p></div>
