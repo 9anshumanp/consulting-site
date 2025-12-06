@@ -50,7 +50,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative w-full h-80 rounded-xl overflow-hidden shadow-xl">
+      <div className="relative w-full h-80 rounded-xl overflow-hidden shadow-xl bg-black">
         {images.map((img, i) => (
           <img
             key={img}
