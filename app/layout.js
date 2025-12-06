@@ -1,11 +1,11 @@
-import './globals.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import './globals.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 export const metadata = {
   title: 'PrimeLogic Consulting',
-  description: 'AI, Data & Automation Consulting'
-}
+  description: 'AI, Data & Automation Consulting',
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -18,5 +18,5 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
-  )
+  );
 }

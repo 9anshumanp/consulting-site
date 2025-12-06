@@ -1,16 +1,15 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-export default function Hero(){
+export default function Hero() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-          AI & Automation Consulting for{" "}
+          AI & Automation Consulting for{' '}
           <span className="text-brand">Modern Organizations</span>
         </h1>
         <p className="mt-4 text-lg text-gray-600">
-          We help teams design scalable AI systems, automate workflows, and
-          extract structured insights from complex documents.
+          We help teams design scalable AI systems, automate workflows, and extract structured insights from complex documents.
         </p>
         <div className="mt-6 flex gap-4">
           <Link
@@ -35,5 +34,5 @@ export default function Hero(){
         />
       </div>
     </section>
-  )
+  );
 }

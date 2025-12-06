@@ -1,4 +1,4 @@
-export const metadata = { title: "Services - PrimeLogic" };
+export const metadata = { title: 'Services - PrimeLogic' };
 
 export default function ServicesPage() {
   return (

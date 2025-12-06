@@ -1,4 +1,4 @@
-export const metadata = { title: "Blog - PrimeLogic" };
+export const metadata = { title: 'Blog - PrimeLogic' };
 
 export default function BlogPage() {
   return (

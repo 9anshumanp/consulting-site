@@ -1,4 +1,4 @@
-export const metadata = { title: "Case Studies - PrimeLogic" };
+export const metadata = { title: 'Case Studies - PrimeLogic' };
 
 export default function CaseStudiesPage() {
   return (

@@ -1,5 +1,5 @@
-import Hero from "./components/Hero";
-import Link from "next/link";
+import Hero from './components/Hero';
+import Link from 'next/link';
 
 function Service({ title, icon, desc }) {
   return (

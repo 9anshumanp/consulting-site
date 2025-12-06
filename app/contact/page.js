@@ -1,19 +1,6 @@
-'use client';
-
-import { useState } from "react";
-
-export const metadata = { title: "Contact - PrimeLogic" };
+export const metadata = { title: 'Contact - PrimeLogic' };
 
 export default function ContactPage() {
-  const [sent, setSent] = useState(false);
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const form = new FormData(e.currentTarget);
-    await fetch("/api/contact", { method: "POST", body: form });
-    setSent(true);
-  }
-
   return (
     <div className="max-w-2xl mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold text-gray-900 mb-4">Contact</h1>
@@ -21,7 +8,7 @@ export default function ContactPage() {
         Tell us briefly about your project and we&apos;ll follow up within one
         business day.
       </p>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form method="POST" action="/api/contact" className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700">
             Name
@@ -60,11 +47,6 @@ export default function ContactPage() {
         >
           Send
         </button>
-        {sent && (
-          <p className="text-sm text-green-600 mt-2">
-            Thanks! Your message has been sent.
-          </p>
-        )}
       </form>
     </div>
   );
