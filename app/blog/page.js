@@ -10,7 +10,7 @@ export default function BlogPage() {
         </h2>
         <p className="text-sm text-gray-600 mt-2">
           A practical outline for designing retrieval-augmented generation in
-          regulated environments.
+          regulated environments, including data access, logging, and evaluation.
         </p>
       </article>
     </div>

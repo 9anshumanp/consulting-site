@@ -1,18 +1,23 @@
 import Hero from './components/Hero';
 import Link from 'next/link';
 
-function Service({ title, icon, desc }) {
+function ServiceCard({ title, icon, desc, href }) {
   return (
-    <div className="p-6 bg-gray-50 border rounded-xl shadow-sm hover:shadow-md transition">
+    <div className="p-6 bg-gray-50 border rounded-xl shadow-sm hover:shadow-md transition flex flex-col">
       <img
-        src={`/images/services/${icon}.png`}
+        src={icon}
         alt={title}
-        className="h-12 w-12 mx-auto"
+        className="h-12 w-12 mx-auto mb-3"
       />
-      <h3 className="mt-4 text-lg font-semibold text-center text-gray-900">
+      <h3 className="mt-1 text-lg font-semibold text-center text-gray-900">
         {title}
       </h3>
-      <p className="text-gray-600 text-center mt-2 text-sm">{desc}</p>
+      <p className="text-gray-600 text-center mt-2 text-sm flex-1">{desc}</p>
+      <div className="mt-4 text-center">
+        <Link href={href} className="text-brand hover:text-brand-dark text-sm font-semibold">
+          Learn more →
+        </Link>
+      </div>
     </div>
   );
 }
@@ -27,44 +32,50 @@ export default function Home() {
           Core Services
         </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <Service
+          <ServiceCard
             title="AI Architecture"
-            icon="ai_architecture"
-            desc="LLM pipelines, retrieval, vector DBs, model orchestration."
+            icon="/images/services/ai_architecture.png"
+            href="/services/ai-architecture"
+            desc="LLM systems, retrieval pipelines, vector search, and scalable AI foundations."
           />
-          <Service
+          <ServiceCard
             title="Chatbots & RAG"
-            icon="chatbot"
-            desc="Internal helpdesk bots and knowledge retrieval systems."
+            icon="/images/services/chatbot.png"
+            href="/services/chatbots"
+            desc="Internal and external chat assistants grounded in your knowledge and data."
           />
-          <Service
+          <ServiceCard
             title="Document Intelligence"
-            icon="pdf"
-            desc="PDF → structured data, OCR, table and form extraction."
+            icon="/images/services/pdf.png"
+            href="/services/document-intelligence"
+            desc="PDF and document ingestion into clean structured data, at scale."
           />
-          <Service
+          <ServiceCard
             title="Process Automation"
-            icon="automation"
-            desc="End-to-end workflow automation and task orchestration."
+            icon="/images/services/automation.png"
+            href="/services/automation"
+            desc="Automate repetitive processes end-to-end to save time and reduce errors."
           />
-          <Service
+          <ServiceCard
             title="Data Engineering"
-            icon="data_engineering"
-            desc="Pipelines, dashboards, and analytics-ready data stacks."
+            icon="/images/services/data_engineering.png"
+            href="/services/data-engineering"
+            desc="Modern data pipelines, transformation, and analytics-ready data models."
           />
-          <Service
+          <ServiceCard
             title="AI Governance"
-            icon="governance"
-            desc="Model monitoring, risk controls, and responsible AI."
+            icon="/images/services/governance.png"
+            href="/services/ai-governance"
+            desc="Controls, monitoring, and documentation for safe and compliant AI use."
           />
         </div>
 
         <div className="text-center mt-10">
           <Link
-            href="/services"
+            href="/contact"
             className="px-5 py-3 bg-brand text-white rounded-lg hover:bg-brand-dark text-sm font-semibold"
           >
-            Explore all services
+            Contact us
           </Link>
         </div>
       </section>

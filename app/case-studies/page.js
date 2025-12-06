@@ -11,7 +11,7 @@ export default function CaseStudiesPage() {
           </h2>
           <p className="text-sm text-gray-600 mt-2">
             Converted large volumes of contracts and forms into structured data,
-            reducing manual review time by over 60%.
+            reducing manual review time by over 60% and improving downstream data quality.
           </p>
         </article>
         <article className="p-6 bg-gray-50 border rounded-xl">
@@ -20,7 +20,7 @@ export default function CaseStudiesPage() {
           </h2>
           <p className="text-sm text-gray-600 mt-2">
             Built a retrieval-augmented chatbot for policy and procedure lookup,
-            enabling faster answers for staff.
+            enabling staff to self-serve answers in seconds instead of minutes.
           </p>
         </article>
       </div>
