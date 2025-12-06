@@ -1,8 +1,18 @@
 import Link from "next/link";
 
-export const metadata = { title: 'Services - PrimeLogic' };
+export const metadata = { title: "Services - PrimeLogic" };
 
 const services = [
+  {
+    title: "AI Strategy & Advisory",
+    href: "/services/ai-advisory",
+    desc: "Maturity assessment, roadmap definition, and executive-ready plans for AI adoption."
+  },
+  {
+    title: "Agentic AI Systems",
+    href: "/services/agentic-ai",
+    desc: "Agents that can plan, call tools, and coordinate complex multi-step workflows."
+  },
   {
     title: "AI Architecture",
     href: "/services/ai-architecture",
@@ -38,15 +48,15 @@ const services = [
 export default function ServicesPage() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h1>
+      <h1 className="text-4xl font-bold text-gray-900 mb-4">Services</h1>
       <p className="text-lg text-gray-700 mb-10">
-        PrimeLogic delivers AI, automation, and data solutions engineered for performance,
-        compliance, and real-world business value. We partner with teams to move from
-        experimentation to production with clear governance and measurable outcomes.
+        PrimeLogic helps you move from AI experimentation to durable, governed capabilities.
+        We partner across strategy, architecture, implementation, and operations to create
+        systems that are both impactful and maintainable.
       </p>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {services.map(s => (
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {services.map((s) => (
           <Link key={s.href} href={s.href} className="service-link-card">
             <div>
               <h2 className="font-semibold text-lg text-gray-900 mb-1">{s.title}</h2>

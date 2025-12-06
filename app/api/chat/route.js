@@ -30,7 +30,7 @@ export async function POST(req) {
     );
   } catch (err) {
     return new Response(
-      JSON.stringify({ reply: 'Error: ' + String(err) } ),
+      JSON.stringify({ reply: 'Error: ' + String(err) }),
       { status: 500, headers: { 'Content-Type': 'application/json' } }
     );
   }

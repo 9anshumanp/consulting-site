@@ -7,7 +7,7 @@ function ServiceCard({ title, icon, desc, href }) {
       <img
         src={icon}
         alt={title}
-        className="h-12 w-12 mx-auto mb-3"
+        className="h-20 w-20 mx-auto mb-4"
       />
       <h3 className="mt-1 text-lg font-semibold text-center text-gray-900">
         {title}
@@ -29,44 +29,56 @@ export default function Home() {
 
       <section className="max-w-6xl mx-auto px-6 pb-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          Core Services
+          AI & Automation Services
         </h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <ServiceCard
+            title="AI Strategy & Advisory"
+            icon="/images/services/ai_advisory.png"
+            href="/services/ai-advisory"
+            desc="Roadmaps, AI maturity assessment, and business case definition aligned to your context."
+          />
+          <ServiceCard
+            title="Agentic AI Systems"
+            icon="/images/services/agentic_ai.png"
+            href="/services/agentic-ai"
+            desc="Multi-step agents, tool-use workflows, and orchestration for complex processes."
+          />
           <ServiceCard
             title="AI Architecture"
             icon="/images/services/ai_architecture.png"
             href="/services/ai-architecture"
-            desc="LLM systems, retrieval pipelines, vector search, and scalable AI foundations."
+            desc="LLM stacks, retrieval, vector search, and observability for production AI systems."
           />
           <ServiceCard
             title="Chatbots & RAG"
             icon="/images/services/chatbot.png"
             href="/services/chatbots"
-            desc="Internal and external chat assistants grounded in your knowledge and data."
+            desc="Internal and customer-facing assistants grounded in your documentation and data."
           />
           <ServiceCard
             title="Document Intelligence"
             icon="/images/services/pdf.png"
             href="/services/document-intelligence"
-            desc="PDF and document ingestion into clean structured data, at scale."
+            desc="PDFs, forms, and contracts into structured data with quality controls built-in."
           />
           <ServiceCard
             title="Process Automation"
             icon="/images/services/automation.png"
             href="/services/automation"
-            desc="Automate repetitive processes end-to-end to save time and reduce errors."
+            desc="Workflow automation and decision flows that reduce manual effort and errors."
           />
           <ServiceCard
             title="Data Engineering"
             icon="/images/services/data_engineering.png"
             href="/services/data-engineering"
-            desc="Modern data pipelines, transformation, and analytics-ready data models."
+            desc="Pipelines, transformations, and models that feed both analytics and AI."
           />
           <ServiceCard
             title="AI Governance"
             icon="/images/services/governance.png"
             href="/services/ai-governance"
-            desc="Controls, monitoring, and documentation for safe and compliant AI use."
+            desc="Model risk, monitoring, controls, and documentation for responsible AI use."
           />
         </div>
 
