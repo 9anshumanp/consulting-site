@@ -2,17 +2,17 @@ export const metadata = { title: "Pricing & Engagements - PrimeLogic" };
 
 export default function PricingPage() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-14">
-      <h1 className="text-4xl font-bold text-gray-900 mb-4">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
         Pricing & Engagement Models
       </h1>
-      <p className="text-lg text-gray-700 leading-relaxed mb-8">
+      <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
         Every client has different constraints, but most engagements fall into a few common
         patterns. We favour transparent scopes, clear deliverables, and collaborative ways
         of working with your teams.
       </p>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         <div className="service-link-card card-hover">
           <h2 className="text-xl font-semibold text-gray-900 mb-2">
             Advisory Retainer

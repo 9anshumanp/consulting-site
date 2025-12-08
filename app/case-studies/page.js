@@ -2,9 +2,9 @@ export const metadata = { title: 'Case Studies - PrimeLogic' };
 
 export default function CaseStudiesPage() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
       <h1 className="text-3xl font-bold text-gray-900 mb-4">Case Studies</h1>
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         <article className="service-link-card card-hover">
           <h2 className="font-semibold text-lg text-gray-900">
             Document Ingestion Platform

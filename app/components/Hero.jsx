@@ -20,34 +20,34 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-14 sm:py-20 lg:py-24 grid md:grid-cols-2 gap-8 lg:gap-10 items-center">
 
         {/* LEFT CONTENT */}
         <div className="relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             AI Strategy, Agentic Systems & Automation
           </h1>
 
-          <p className="mt-6 text-lg text-gray-700 leading-relaxed max-w-xl">
+          <p className="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
             PrimeLogic helps teams plan, build, and scale AI responsibly — from advisory to 
             architecture, implementation, and governance.
           </p>
 
-          <p className="mt-3 text-lg text-gray-700 leading-relaxed max-w-xl">
+          <p className="mt-3 text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
             We specialize in agentic workflows, RAG platforms, document intelligence, and AI-driven automation.
           </p>
 
-          <div className="mt-8 flex gap-4">
+          <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Link
               href="/contact"
-              className="px-6 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700"
+              className="px-6 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 w-full sm:w-auto text-center"
             >
               Contact us
             </Link>
 
             <Link
               href="/services"
-              className="px-6 py-3 border border-gray-400 rounded-lg font-semibold text-gray-700 hover:border-indigo-600 hover:text-indigo-600"
+              className="px-6 py-3 border border-gray-400 rounded-lg font-semibold text-gray-700 hover:border-indigo-600 hover:text-indigo-600 w-full sm:w-auto text-center"
             >
               View services
             </Link>
@@ -55,7 +55,7 @@ export default function Hero() {
         </div>
 
         {/* RIGHT — enhanced slideshow */}
-        <div className="relative w-full h-80 rounded-xl overflow-hidden shadow-xl">
+        <div className="relative w-full h-64 sm:h-72 md:h-80 rounded-xl overflow-hidden shadow-xl">
           {slides.map((src, i) => (
             <img
               key={src}

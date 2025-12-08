@@ -2,22 +2,22 @@ export const metadata = { title: "Data Engineering - PrimeLogic" };
 
 export default function DataEngineeringPage() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-14">
-      <h1 className="text-4xl font-bold mb-4 text-gray-900">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+      <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
         Data Engineering & Analytics Foundations
       </h1>
-      <p className="text-gray-700 text-lg leading-relaxed">
+      <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
         We design and implement data pipelines, transformations, and analytics layers that
         support both traditional BI and modern AI use cases. Our solutions ensure your data
         is reliable, well-modeled, and efficiently processed.
       </p>
 
-      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+      <p className="text-gray-700 text-base sm:text-lg leading-relaxed mt-4">
         This includes ingestion, ETL/ELT, cleaning, enrichment, modeling, orchestration,
         versioning, and performance optimization across cloud platforms.
       </p>
 
-      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+      <p className="text-gray-700 text-base sm:text-lg leading-relaxed mt-4">
         High-quality data engineering is the foundation that makes AI and automation
         trustworthy and scalable.
       </p>

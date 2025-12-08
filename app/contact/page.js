@@ -2,7 +2,7 @@ export const metadata = { title: 'Contact - PrimeLogic' };
 
 export default function ContactPage() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-12">
+    <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
       <h1 className="text-3xl font-bold text-gray-900 mb-4">Contact</h1>
       <p className="text-gray-600 mb-6">
         Tell us briefly about your project and we&apos;ll follow up within one

@@ -55,15 +55,15 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-14">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
       <h1 className="text-4xl font-bold text-gray-900 mb-4">Services</h1>
-      <p className="text-lg text-gray-700 mb-10 leading-relaxed">
+      <p className="text-base sm:text-lg text-gray-700 mb-8 leading-relaxed">
         PrimeLogic helps you move from AI experimentation to durable, governed capabilities.
         We partner across strategy, architecture, implementation, and operations to create
         systems that are both impactful and maintainable.
       </p>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
         {services.map((s) => (
           <Link
             key={s.href}
@@ -72,13 +72,13 @@ export default function ServicesPage() {
           >
             <img
               src={`/images/services/${s.icon}`}
-              className="h-24 w-24 mx-auto mb-4"
+              className="h-20 w-20 sm:h-24 sm:w-24 mx-auto mb-4"
               alt={s.title}
             />
             <h2 className="font-semibold text-lg text-gray-900 mb-1">
               {s.title}
             </h2>
-            <p className="text-sm text-gray-600">
+            <p className="text-xs sm:text-sm text-gray-600">
               {s.desc}
             </p>
             <div className="mt-4 text-sm text-brand font-semibold">
