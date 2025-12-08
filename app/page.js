@@ -3,16 +3,18 @@ import Link from 'next/link';
 
 function ServiceCard({ title, icon, desc, href }) {
   return (
-    <div className="service-link-card card-hover flex flex-col">
+    <div className="service-link-card card-hover">
       <img
         src={icon}
         alt={title}
-        className="h-28 w-28 mx-auto mb-4"
+        className="h-28 w-28 mx-auto mb-5"
       />
       <h3 className="mt-1 text-lg font-semibold text-center text-gray-900">
         {title}
       </h3>
-      <p className="text-gray-600 text-center mt-2 text-sm flex-1">{desc}</p>
+      <p className="text-gray-600 text-center mt-2 text-sm flex-1 px-1">
+        {desc}
+      </p>
       <div className="mt-4 text-center">
         <Link href={href} className="text-brand hover:text-brand-dark text-sm font-semibold">
           Learn more →
@@ -27,6 +29,48 @@ export default function Home() {
     <>
       <Hero />
 
+      {/* Why Choose Us */}
+      <section className="max-w-6xl mx-auto px-6 pb-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          Why teams work with PrimeLogic
+        </h2>
+        <p className="text-gray-700 mb-8 leading-relaxed max-w-3xl">
+          We combine hands-on delivery experience with practical advisory, helping you make
+          grounded decisions about AI adoption — especially in environments with strict risk
+          and compliance expectations.
+        </p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="service-link-card card-hover bg-gradient-to-br from-indigo-50 to-sky-50">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              Deep AI & Data Experience
+            </h3>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              15+ years working with data, analytics, and AI in financial services and
+              other regulated industries — from proof-of-concept to production.
+            </p>
+          </div>
+          <div className="service-link-card card-hover bg-gradient-to-br from-indigo-50 to-violet-50">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              Agentic & Practical
+            </h3>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Focus on agentic workflows, document intelligence, and automation that
+              remove real manual work, not just demonstrations.
+            </p>
+          </div>
+          <div className="service-link-card card-hover bg-gradient-to-br from-indigo-50 to-slate-50">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              Governance & Control Mindset
+            </h3>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Designed with model risk, auditability, and operational resilience in mind —
+              so AI systems can stand up to real scrutiny.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services grid */}
       <section className="max-w-6xl mx-auto px-6 pb-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">
           AI & Automation Services
@@ -72,7 +116,7 @@ export default function Home() {
             title="Data Engineering"
             icon="/images/services/data_engineering.png"
             href="/services/data-engineering"
-            desc="Pipelines, transformations, and models that feed both analytics and AI."
+            desc="Pipelines, transformations, and data models powering analytics and AI."
           />
           <ServiceCard
             title="AI Governance"

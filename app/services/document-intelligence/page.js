@@ -7,9 +7,19 @@ export default function DocumentIntelligencePage() {
         Document Intelligence & PDF to Structured Data
       </h1>
       <p className="text-gray-700 text-lg leading-relaxed">
-        Many critical processes still run on PDFs, scanned forms, and semi-structured documents.
-        We design extraction pipelines that convert contracts, statements, applications, and reports
-        into clean structured data that downstream systems can rely on.
+        We help organizations transform PDFs, scanned documents, forms, and contracts into
+        structured, action-ready data. Our solutions combine OCR, layout analysis, table
+        extraction, entity detection, and custom post-processing to achieve high precision.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        From financial statements to legal agreements, we tailor extraction logic based on
+        patterns in your documents and the accuracy thresholds your teams require.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        Extracted data can be pushed into databases, workflows, or automated decisioning
+        systems to streamline operations.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-3">Capabilities</h2>

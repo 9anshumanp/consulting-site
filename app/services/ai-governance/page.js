@@ -7,9 +7,19 @@ export default function AIGovernancePage() {
         AI Governance & Model Risk
       </h1>
       <p className="text-gray-700 text-lg leading-relaxed">
-        As AI systems move into production, governance becomes essential. We help teams define
-        standards, controls, and monitoring that align with internal risk frameworks and
-        external regulation.
+        We help organizations implement responsible AI practices that meet regulatory,
+        ethical, and operational expectations. Governance ensures your models are safe,
+        explainable, and monitored throughout their lifecycle.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        Our work includes bias testing, model documentation, risk assessments, audit trails,
+        performance monitoring, and controls that fit your industry’s compliance standards.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        Strong governance reduces risk while enabling faster and more confident deployment of
+        AI capabilities.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-3">What this includes</h2>

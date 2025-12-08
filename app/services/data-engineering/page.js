@@ -7,8 +7,19 @@ export default function DataEngineeringPage() {
         Data Engineering & Analytics Foundations
       </h1>
       <p className="text-gray-700 text-lg leading-relaxed">
-        Great AI systems rely on high-quality, well-modeled data. We help modernize data pipelines,
-        design analytics-ready models, and ensure your AI projects are built on reliable foundations.
+        We design and implement data pipelines, transformations, and analytics layers that
+        support both traditional BI and modern AI use cases. Our solutions ensure your data
+        is reliable, well-modeled, and efficiently processed.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        This includes ingestion, ETL/ELT, cleaning, enrichment, modeling, orchestration,
+        versioning, and performance optimization across cloud platforms.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        High-quality data engineering is the foundation that makes AI and automation
+        trustworthy and scalable.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-3">Focus areas</h2>

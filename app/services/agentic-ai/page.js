@@ -6,10 +6,24 @@ export default function AgenticAIPage() {
       <h1 className="text-4xl font-bold mb-4 text-gray-900">
         Agentic AI Systems
       </h1>
+
       <p className="text-gray-700 text-lg leading-relaxed">
-        We design agentic systems where AI can plan, call tools, and coordinate across multiple
-        steps — going beyond single-turn prompts. These agents orchestrate workflows across APIs,
-        internal systems, and human review where needed.
+        Agentic systems go beyond chatbots — they can plan tasks, call tools, route decisions,
+        and take multi-step actions autonomously. We design agentic workflows tailored to your
+        business processes, ensuring they are reliable, auditable, and safely constrained.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        Our approach emphasizes robustness: clear guardrails, deterministic fallbacks, event
+        logging, and monitoring. Whether it’s document processing, customer service triage,
+        portfolio analysis, or operations automation, agents dramatically reduce manual
+        workload while preserving control.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        We integrate agents with internal APIs, knowledge bases, and existing automation
+        systems — extending your organization’s capabilities without disrupting established
+        processes.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-3">Typical patterns</h2>

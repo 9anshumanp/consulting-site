@@ -7,9 +7,21 @@ export default function ChatbotsPage() {
         Chatbots & Retrieval-Augmented Generation
       </h1>
       <p className="text-gray-700 text-lg leading-relaxed">
-        We build chat interfaces that let employees or customers interact with your knowledge directly.
-        Using retrieval-augmented generation (RAG), chatbots can answer questions grounded in policies,
-        documentation, FAQs, and historical data — with guardrails and logging built-in.
+        We build domain-specific conversational systems backed by Retrieval-Augmented
+        Generation (RAG). This allows your chatbot to respond based on your internal
+        documentation, policies, emails, PDFs, and knowledge bases — with higher accuracy
+        than generic models.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        Our RAG solutions include data ingestion pipelines, embedding optimization, chunking
+        strategies, vector search tuning, context re-ranking, and guardrails to ensure the
+        chatbot remains factual and aligned with your policies.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        Chat interfaces can be deployed across web, mobile, internal tools, or as APIs
+        integrated into your workflows.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-3">Use cases</h2>

@@ -6,10 +6,25 @@ export default function AIAdvisoryPage() {
       <h1 className="text-4xl font-bold mb-4 text-gray-900">
         AI Strategy & Advisory
       </h1>
+
       <p className="text-gray-700 text-lg leading-relaxed">
-        We work with stakeholders across business, technology, and risk to define a grounded
-        AI strategy. Instead of chasing hype, we focus on concrete use cases, data realities,
-        and the change management required to adopt AI safely and effectively.
+        We help you move from AI exploration to a concrete, prioritised roadmap that fits
+        your business model, data realities, and risk appetite. Instead of chasing generic
+        use cases, we focus on where AI can actually reduce friction, improve decisioning,
+        or unlock new capabilities.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        Engagements typically include discovery sessions with stakeholders, assessment of
+        current data and system maturity, and a practical view of the architecture and
+        operating model you will need to support AI at scale. The output is a set of
+        clearly framed initiatives, not a slideware vision that never ships.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        We also support executive and board-level discussions, helping non-technical
+        leaders understand the trade-offs, risks, and sequencing involved in AI adoption,
+        especially in regulated environments such as financial services.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-3">How we help</h2>

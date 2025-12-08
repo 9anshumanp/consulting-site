@@ -7,8 +7,18 @@ export default function AutomationPage() {
         Process Automation
       </h1>
       <p className="text-gray-700 text-lg leading-relaxed">
-        We help teams identify high-impact manual processes and design automation that is robust,
-        observable, and safe. We focus on stitching together systems — not just building isolated bots.
+        We build workflow automation solutions that combine AI reasoning with deterministic
+        logic. This ensures your processes become faster, more consistent, and less dependent
+        on manual intervention.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        Automations can include routing, validations, document classification, decision
+        scoring, notifications, and integrations with internal APIs or legacy systems.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        Our goal is to reduce operational overhead while increasing accuracy and governance.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-3">Examples</h2>

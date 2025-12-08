@@ -7,10 +7,21 @@ export default function AIArchitecturePage() {
         AI Architecture & LLM Systems
       </h1>
       <p className="text-gray-700 text-lg leading-relaxed">
-        We design scalable AI and LLM architectures tailored to your business workflows — including
-        retrieval pipelines, vector databases, embedding strategies, and production orchestration.
-        Our solutions are built to be observable, maintainable, and aligned with your risk and
-        compliance requirements.
+        We design modern AI architectures that integrate LLMs, embeddings, vector search,
+        retrieval pipelines, and orchestration layers. Our focus is on scalability,
+        reliability, and maintainability — ensuring your AI systems can evolve as models
+        improve.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        Architecture work includes model selection, prompt strategies, caching layers,
+        containerization, vector database design, streaming ingestion patterns, security
+        controls, and integration with existing enterprise systems.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-4">
+        We ensure your stack is cloud-ready, vendor-agnostic where possible, and optimized
+        for performance and cost.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-3">What we deliver</h2>

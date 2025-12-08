@@ -9,13 +9,14 @@ export default function Navbar() {
         <Link href="/" className="flex items-center">
           <img src="/images/logo.png" alt="PrimeLogic logo" className="h-20 w-auto" />
         </Link>
-        <div className="flex gap-10 text-base font-medium">
+        <div className="flex gap-8 text-sm font-medium items-center">
           <Link href="/services" className="hover:text-brand">Services</Link>
           <Link href="/case-studies" className="hover:text-brand">Case Studies</Link>
           <Link href="/blog" className="hover:text-brand">Blog</Link>
+          <Link href="/pricing" className="hover:text-brand">Pricing</Link>
           <Link
             href="/contact"
-            className="px-6 py-3 rounded bg-brand text-white hover:bg-brand-dark"
+            className="px-5 py-2 rounded bg-brand text-white hover:bg-brand-dark text-sm font-semibold"
           >
             Contact
           </Link>
