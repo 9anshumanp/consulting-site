@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 function ServiceCard({ title, icon, desc, href }) {
   return (
-    <div className="p-6 bg-gray-50 border rounded-xl shadow-sm hover:shadow-md transition flex flex-col">
+    <div className="service-link-card card-hover flex flex-col">
       <img
         src={icon}
         alt={title}
-        className="h-20 w-20 mx-auto mb-4"
+        className="h-28 w-28 mx-auto mb-4"
       />
       <h3 className="mt-1 text-lg font-semibold text-center text-gray-900">
         {title}

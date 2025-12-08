@@ -57,8 +57,9 @@ export default function ServicesPage() {
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {services.map((s) => (
-          <Link key={s.href} href={s.href} className="service-link-card">
-            <div>
+          <Link key={s.href} href={s.href} className="service-link-card card-hover">
+            <img src={`/images/services/${s.icon}`} className="h-24 w-24 mx-auto mb-4" alt={s.title} />
+              <div>
               <h2 className="font-semibold text-lg text-gray-900 mb-1">{s.title}</h2>
               <p className="text-sm text-gray-600">{s.desc}</p>
             </div>
